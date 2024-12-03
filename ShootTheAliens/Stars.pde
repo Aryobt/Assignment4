@@ -10,16 +10,16 @@ class Stars {//identify Stars as a class
   float Xstarposition5;//veriable for the x position of star 5
   float Ystarposition5;//veriable for the y position of star 5
   Stars() {
-    Xstarposition1 = random(20, 380);
-    Ystarposition1 = random(20, 380);
-    Xstarposition2 = random(20, 380);
-    Ystarposition2 = random(20, 380);
-    Xstarposition3 = random(20, 380);
-    Ystarposition3 = random(20, 380);
-    Xstarposition4 = random(20, 380);
-    Ystarposition4 = random(20, 380);
-    Xstarposition5 = random(20, 380);
-    Ystarposition5 = random(20, 380);
+    Xstarposition1 = random(20, 380);//xposition of star1
+    Ystarposition1 = random(20, 380);//yposition of star1
+    Xstarposition2 = random(20, 380);//xposition of star2
+    Ystarposition2 = random(20, 380);//yposition of star2
+    Xstarposition3 = random(20, 380);//xposition of star3
+    Ystarposition3 = random(20, 380);//yposition of star3
+    Xstarposition4 = random(20, 380);//xposition of star4
+    Ystarposition4 = random(20, 380);//yposition of star4
+    Xstarposition5 = random(20, 380);//xposition of star5
+    Ystarposition5 = random(20, 380);//yposition of star5
   }
   void display() {//display the Stars
     Star1();//draw Star1
