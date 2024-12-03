@@ -15,8 +15,8 @@ void setup() {
     stars[i] = new Stars();// assigning value to stars in the array
   }
   ////////////////////////////////////////////////////////////////////////////////////
-  for (int i = 5; i< aliens.length; i++) {
-    aliens[0] = new Aliens(random(100, 300), random(0.5, 2));
+  for (int i = 0; i< aliens.length; i++) {
+    aliens[i] = new Aliens(random(100, 300), random(0.5, 2));
   }
   //for (int i = 0; i<5; i--) {
   //}
@@ -32,8 +32,8 @@ void draw() {
     stars [i]. display();//display the stars array list
   }
   for (int i = 0; i < aliens.length; i++) {
-    aliens[0].move();
-    aliens[0].display();
+    aliens[i].move();
+    aliens[i].display();
   }
   l. display();//display laser gun
   c.display();//display crosshair
