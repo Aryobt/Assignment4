@@ -3,6 +3,7 @@ boolean goRight = false;//boolean for movement
 Stars [] stars = new Stars[5];//Arrya list for the Stars object
 
 Lasergun l;//Laserun is shown with l
+Crosshair c;//Crosshair is shown with c
 
 void setup() {
   size(400, 400);//size of the screen
@@ -13,6 +14,7 @@ void setup() {
   for (int i = 0; i<5; i--) {
   }
   l = new Lasergun();//Lasergun is shown with l
+  c = new Crosshair();//Crosshair is shown with c
 }
 
 void draw() {
@@ -22,13 +24,21 @@ void draw() {
   }
 
   l. display();//display laser gun
+  c.display();//display crosshair
 
   if (goLeft == true) {
-    l. displayLeft();
+    l.displayLeft();
   }
   if (goRight == true) {
-    l. displayRight();
+    l.displayRight();
   }
+  if(goLeft == true){
+    c.displayLeft();
+  }
+  if(goRight == true){
+    c.displayRight();
+  }
+  
 }
 void keyPressed() {
   if (key == 'a') {
