@@ -3,7 +3,7 @@ class Crosshair {
   PImage crosshair;
 
   Crosshair() {
-    position = new PVector (10,mouseY);
+    position = new PVector (10, mouseY);
     crosshair = loadImage("crosshair.png");
   }
   void display() {
