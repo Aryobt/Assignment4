@@ -10,10 +10,10 @@ class Lasergun {
   }
   void displayLeft() {//draw gun movement to left//this is my velosity
     image(gun, position.x, position.y);//giving the image its positions
-    position.x -=1;//position decreases
+    position.x -=2;//position decreases
   }
   void displayRight() {//draw gun movement to right//this is my velosity
     image(gun, position.x, position.y);//giving the image its positions
-    position.x +=1;//position increasing
+    position.x +=2;//position increasing
   }
 }
