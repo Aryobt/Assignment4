@@ -54,7 +54,7 @@ void draw() {
   }
   ////////////////////////////////////////////////////////////////////////////////////////
   p. display();//display planet
-  //for (int i = 0; i < aliens.length; i++) {
+ 
   aliens.move();
   aliens.display();
   //}
