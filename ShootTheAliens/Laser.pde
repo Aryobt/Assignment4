@@ -1,8 +1,8 @@
 class Laser {//identify Laser as a class
-  PVector acceleration;
+
   PVector position;
   Laser() {
-    acceleration = new PVector(50, 60);
+  
     position = new PVector(50, 380);
   }
   void display() {

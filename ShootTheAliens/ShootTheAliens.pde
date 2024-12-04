@@ -2,6 +2,7 @@ boolean goLeft = false;//boolean for movement
 boolean goRight = false;//boolean for movement
 boolean isMenuOn = true;
 boolean die = false;
+boolean victory = false;
 Stars [] stars = new Stars[5];//Arrya list for the Stars object
 Aliens [] aliens = new Aliens[5];// Arrya list of ailens
 
@@ -10,6 +11,7 @@ Laser g;
 Crosshair c;//Crosshair is shown with c
 Title t;//Title is shown with t
 Youlose y;
+Youwin w;
 Planet p;//Planet is shown with p
 ////////////////////////////////////////////////////////////////////////////////////////
 void setup() {
@@ -30,6 +32,7 @@ void setup() {
   c = new Crosshair();//Crosshair is shown with c
   t = new Title();//Title is shown with t
   y = new Youlose();
+  w = new Youwin();
   p = new Planet();//Planet is showm with p
 }
 /////////////////////////////////////////////////////////////////////////////////
@@ -82,7 +85,7 @@ void draw() {
     t.display();//display title
   }
   ////////////////////////////////////////////////////////////////////////////////////////
-  if (die == true && isMenuOn == false) {
+  if (die == true && isMenuOn == false ) {
     y. display();
   }
 }
@@ -118,5 +121,7 @@ void mousePressed() {
   if ((c.position.x >= 50)&&(mouseY >= 30)&&(c.position.x<=150)&&(mouseY<= 90)) {//if mouse y = to planet hit box you lose is true
     die = true;
   }
+  //if (
+  //  victory = true;
+  }
   /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-}
